@@ -8,7 +8,7 @@
 
 #import "ChoosePictureViewController.h"
 
-#import "ChoosePictureCollectionViewCell.h"
+#import "QTChoosePictureCollectionViewCell.h"
 
 
 @interface ChoosePictureViewController () <UICollectionViewDataSource, UICollectionViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate>
@@ -19,7 +19,6 @@
 @property (nonatomic, strong) UICollectionViewFlowLayout *CPFlowLayout;
 
 @property (nonatomic, strong) NSMutableArray *modelArray;
-
 
 @end
 
@@ -47,12 +46,14 @@
 {
     if (_CPCollectionView == nil) {
         
-        _CPCollectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:self.CPFlowLayout];
+        _CPCollectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:self.CPFlowLayout];
         
         _CPCollectionView.dataSource = self;
         _CPCollectionView.delegate = self;
         
-        [_CPCollectionView registerClass:[ChoosePictureCollectionViewCell class] forCellWithReuseIdentifier:@"CPCell"];
+        _CPCollectionView.backgroundColor = [UIColor whiteColor];
+        
+        [_CPCollectionView registerClass:[QTChoosePictureCollectionViewCell class] forCellWithReuseIdentifier:@"CPCell"];
         
     }
     
@@ -66,8 +67,14 @@
     {
         _modelArray = [NSMutableArray array];
     }
-    
     return _modelArray;
+}
+
+- (NSMutableArray *)uploadImageArray{
+    if (_uploadImageArray == nil) {
+        _uploadImageArray = [NSMutableArray array];
+    }
+    return _uploadImageArray;
 }
 
 
@@ -75,7 +82,7 @@
 {
     _addImage = addImage;
     
-    [self.modelArray addObject:addImage];
+    [self.modelArray addObject:addImage]; // ---关键代码---
 }
 
 
@@ -87,6 +94,11 @@
     
     
     [self.view addSubview:self.CPCollectionView];
+    
+    [self.CPCollectionView makeConstraints:^(MASConstraintMaker *make) {
+        
+        make.edges.equalTo(self.view);
+    }];
     
 }
 
@@ -100,7 +112,7 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     
-    ChoosePictureCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"CPCell" forIndexPath:indexPath];
+    QTChoosePictureCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"CPCell" forIndexPath:indexPath];
     
     cell.cellImg = self.modelArray[indexPath.row];
     
@@ -114,7 +126,7 @@
     __weak typeof(self) weakSelf = self;
     
     
-    if (indexPath.row == (self.modelArray.count - 1)) // 判断点击的是加号,还是图片
+    if (indexPath.row == (self.modelArray.count - 1)) // 点击的是加号
     {
         
         UIAlertController *alertC = [UIAlertController alertControllerWithTitle:@"请选择图片来源" message:nil preferredStyle:UIAlertControllerStyleActionSheet];
@@ -147,7 +159,7 @@
         [self presentViewController:alertC animated:YES completion:nil];
         
     }
-    else
+    else // 点击的是图片
     {
         
         UIAlertController *alertC = [UIAlertController alertControllerWithTitle:@"确定要删除照片吗?" message:@"删除操作无法撤销" preferredStyle:UIAlertControllerStyleAlert];
@@ -157,6 +169,8 @@
             
             
             [weakSelf.modelArray removeObjectAtIndex:indexPath.row]; // ---关键代码---
+            
+            [weakSelf.uploadImageArray removeObjectAtIndex:indexPath.row];
             
             [weakSelf.CPCollectionView reloadData];
             
@@ -177,10 +191,12 @@
     
     NSData *imageData = UIImageJPEGRepresentation(info[UIImagePickerControllerEditedImage], 0.8);
     
+    [self.uploadImageArray addObject:imageData];
+    
     UIImage * newImage = [UIImage imageWithData:imageData];
     
     [self.modelArray insertObject:newImage atIndex:(self.modelArray.count - 1)]; // ---关键代码---
-    
+
     [self.CPCollectionView reloadData];
     
     [self dismissViewControllerAnimated:YES completion:nil];

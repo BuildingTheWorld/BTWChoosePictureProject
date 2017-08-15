@@ -18,5 +18,7 @@
 
 @property (nonatomic, assign) CGFloat CPMinimumInteritemSpacing;
 
+@property (nonatomic, strong) NSMutableArray *uploadImageArray;
+
 @end
 

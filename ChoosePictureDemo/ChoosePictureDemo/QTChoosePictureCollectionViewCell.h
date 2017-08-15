@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ChoosePictureCollectionViewCell : UICollectionViewCell
+@interface QTChoosePictureCollectionViewCell : UICollectionViewCell
 
 @property (nonatomic, strong) UIImage *cellImg;
 

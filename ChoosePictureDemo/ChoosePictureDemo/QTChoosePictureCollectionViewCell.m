@@ -6,17 +6,17 @@
 //  Copyright © 2017年 qt. All rights reserved.
 //
 
-#import "ChoosePictureCollectionViewCell.h"
+#import "QTChoosePictureCollectionViewCell.h"
 
 
-@interface ChoosePictureCollectionViewCell ()
+@interface QTChoosePictureCollectionViewCell ()
 
 @property (nonatomic, strong) UIImageView *pictureImageView;
 
 @end
 
 
-@implementation ChoosePictureCollectionViewCell
+@implementation QTChoosePictureCollectionViewCell
 
 - (UIImageView *)pictureImageView
 {
