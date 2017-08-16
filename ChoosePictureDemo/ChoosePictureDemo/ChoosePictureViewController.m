@@ -150,6 +150,18 @@
         }];
         UIAlertAction *cameraAction = [UIAlertAction actionWithTitle:@"相机拍摄" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
             
+            if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera])
+            {
+                if ([UIImagePickerController isCameraDeviceAvailable:UIImagePickerControllerCameraDeviceFront] && [UIImagePickerController isCameraDeviceAvailable:UIImagePickerControllerCameraDeviceRear]) // 前后置摄像头都可用
+                {
+                    UIImagePickerController *imgPickerC = [[UIImagePickerController alloc] init];
+                    imgPickerC.delegate = weakSelf;
+                    imgPickerC.sourceType = UIImagePickerControllerSourceTypeCamera;
+                    imgPickerC.allowsEditing = YES;
+                    [weakSelf presentViewController:imgPickerC animated:YES completion:nil];
+                }
+            }
+            
         }];
         
         [alertC addAction:cancelAction];
