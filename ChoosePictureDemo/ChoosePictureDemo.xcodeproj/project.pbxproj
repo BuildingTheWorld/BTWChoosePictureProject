@@ -9,11 +9,9 @@
 /* Begin PBXBuildFile section */
 		729A1C2E1F29E457007B22E7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 729A1C2D1F29E457007B22E7 /* main.m */; };
 		729A1C311F29E457007B22E7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 729A1C301F29E457007B22E7 /* AppDelegate.m */; };
-		729A1C341F29E457007B22E7 /* ChoosePictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 729A1C331F29E457007B22E7 /* ChoosePictureViewController.m */; };
 		729A1C371F29E457007B22E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 729A1C351F29E457007B22E7 /* Main.storyboard */; };
 		729A1C391F29E457007B22E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 729A1C381F29E457007B22E7 /* Assets.xcassets */; };
 		729A1C3C1F29E457007B22E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 729A1C3A1F29E457007B22E7 /* LaunchScreen.storyboard */; };
-		729A1C4B1F29E842007B22E7 /* ChoosePictureCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 729A1C4A1F29E842007B22E7 /* ChoosePictureCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,14 +19,10 @@
 		729A1C2D1F29E457007B22E7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		729A1C2F1F29E457007B22E7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		729A1C301F29E457007B22E7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		729A1C321F29E457007B22E7 /* ChoosePictureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChoosePictureViewController.h; sourceTree = "<group>"; };
-		729A1C331F29E457007B22E7 /* ChoosePictureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChoosePictureViewController.m; sourceTree = "<group>"; };
 		729A1C361F29E457007B22E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		729A1C381F29E457007B22E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		729A1C3B1F29E457007B22E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		729A1C3D1F29E457007B22E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		729A1C491F29E842007B22E7 /* ChoosePictureCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChoosePictureCollectionViewCell.h; sourceTree = "<group>"; };
-		729A1C4A1F29E842007B22E7 /* ChoosePictureCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChoosePictureCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,10 +57,6 @@
 			children = (
 				729A1C2F1F29E457007B22E7 /* AppDelegate.h */,
 				729A1C301F29E457007B22E7 /* AppDelegate.m */,
-				729A1C321F29E457007B22E7 /* ChoosePictureViewController.h */,
-				729A1C331F29E457007B22E7 /* ChoosePictureViewController.m */,
-				729A1C491F29E842007B22E7 /* ChoosePictureCollectionViewCell.h */,
-				729A1C4A1F29E842007B22E7 /* ChoosePictureCollectionViewCell.m */,
 				729A1C351F29E457007B22E7 /* Main.storyboard */,
 				729A1C381F29E457007B22E7 /* Assets.xcassets */,
 				729A1C3A1F29E457007B22E7 /* LaunchScreen.storyboard */,
@@ -155,8 +145,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				729A1C4B1F29E842007B22E7 /* ChoosePictureCollectionViewCell.m in Sources */,
-				729A1C341F29E457007B22E7 /* ChoosePictureViewController.m in Sources */,
 				729A1C311F29E457007B22E7 /* AppDelegate.m in Sources */,
 				729A1C2E1F29E457007B22E7 /* main.m in Sources */,
 			);
