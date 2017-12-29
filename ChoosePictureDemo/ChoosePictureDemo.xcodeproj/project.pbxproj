@@ -12,6 +12,15 @@
 		729A1C371F29E457007B22E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 729A1C351F29E457007B22E7 /* Main.storyboard */; };
 		729A1C391F29E457007B22E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 729A1C381F29E457007B22E7 /* Assets.xcassets */; };
 		729A1C3C1F29E457007B22E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 729A1C3A1F29E457007B22E7 /* LaunchScreen.storyboard */; };
+		72E4425F1FF5F31500823552 /* QTChoosePictureCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 72E4425C1FF5F31500823552 /* QTChoosePictureCollectionViewCell.m */; };
+		72E442601FF5F31500823552 /* ChoosePictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72E4425D1FF5F31500823552 /* ChoosePictureViewController.m */; };
+		72E4426B1FF5F31B00823552 /* QTImagePickController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72E442631FF5F31B00823552 /* QTImagePickController.m */; };
+		72E4426C1FF5F31B00823552 /* QTImagePickCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 72E442671FF5F31B00823552 /* QTImagePickCell.m */; };
+		72E4426D1FF5F31B00823552 /* QTPickCameraCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 72E442691FF5F31B00823552 /* QTPickCameraCell.m */; };
+		72E4427C1FF5F32100823552 /* QTClipImageContainerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72E442721FF5F32100823552 /* QTClipImageContainerController.m */; };
+		72E4427D1FF5F32100823552 /* QTImageDisplayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72E442741FF5F32100823552 /* QTImageDisplayController.m */; };
+		72E4427E1FF5F32100823552 /* QTClipImageContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 72E442771FF5F32100823552 /* QTClipImageContainerView.m */; };
+		72E4427F1FF5F32100823552 /* QTThumbnailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 72E4427B1FF5F32100823552 /* QTThumbnailCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +32,24 @@
 		729A1C381F29E457007B22E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		729A1C3B1F29E457007B22E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		729A1C3D1F29E457007B22E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72E4425B1FF5F31500823552 /* ChoosePictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChoosePictureViewController.h; sourceTree = "<group>"; };
+		72E4425C1FF5F31500823552 /* QTChoosePictureCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTChoosePictureCollectionViewCell.m; sourceTree = "<group>"; };
+		72E4425D1FF5F31500823552 /* ChoosePictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChoosePictureViewController.m; sourceTree = "<group>"; };
+		72E4425E1FF5F31500823552 /* QTChoosePictureCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTChoosePictureCollectionViewCell.h; sourceTree = "<group>"; };
+		72E442631FF5F31B00823552 /* QTImagePickController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTImagePickController.m; sourceTree = "<group>"; };
+		72E442641FF5F31B00823552 /* QTImagePickController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTImagePickController.h; sourceTree = "<group>"; };
+		72E442671FF5F31B00823552 /* QTImagePickCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTImagePickCell.m; sourceTree = "<group>"; };
+		72E442681FF5F31B00823552 /* QTPickCameraCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTPickCameraCell.h; sourceTree = "<group>"; };
+		72E442691FF5F31B00823552 /* QTPickCameraCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTPickCameraCell.m; sourceTree = "<group>"; };
+		72E4426A1FF5F31B00823552 /* QTImagePickCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTImagePickCell.h; sourceTree = "<group>"; };
+		72E442711FF5F32100823552 /* QTClipImageContainerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTClipImageContainerController.h; sourceTree = "<group>"; };
+		72E442721FF5F32100823552 /* QTClipImageContainerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTClipImageContainerController.m; sourceTree = "<group>"; };
+		72E442731FF5F32100823552 /* QTImageDisplayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTImageDisplayController.h; sourceTree = "<group>"; };
+		72E442741FF5F32100823552 /* QTImageDisplayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTImageDisplayController.m; sourceTree = "<group>"; };
+		72E442771FF5F32100823552 /* QTClipImageContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTClipImageContainerView.m; sourceTree = "<group>"; };
+		72E442781FF5F32100823552 /* QTClipImageContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTClipImageContainerView.h; sourceTree = "<group>"; };
+		72E4427A1FF5F32100823552 /* QTThumbnailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTThumbnailCell.h; sourceTree = "<group>"; };
+		72E4427B1FF5F32100823552 /* QTThumbnailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTThumbnailCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +84,9 @@
 			children = (
 				729A1C2F1F29E457007B22E7 /* AppDelegate.h */,
 				729A1C301F29E457007B22E7 /* AppDelegate.m */,
+				72E4425A1FF5F31500823552 /* BTWChoosePicture */,
+				72E442611FF5F31B00823552 /* QTImagePick */,
+				72E4426E1FF5F32100823552 /* QTImageDisplay */,
 				729A1C351F29E457007B22E7 /* Main.storyboard */,
 				729A1C381F29E457007B22E7 /* Assets.xcassets */,
 				729A1C3A1F29E457007B22E7 /* LaunchScreen.storyboard */,
@@ -72,6 +102,101 @@
 				729A1C2D1F29E457007B22E7 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		72E4425A1FF5F31500823552 /* BTWChoosePicture */ = {
+			isa = PBXGroup;
+			children = (
+				72E4425B1FF5F31500823552 /* ChoosePictureViewController.h */,
+				72E4425C1FF5F31500823552 /* QTChoosePictureCollectionViewCell.m */,
+				72E4425D1FF5F31500823552 /* ChoosePictureViewController.m */,
+				72E4425E1FF5F31500823552 /* QTChoosePictureCollectionViewCell.h */,
+			);
+			path = BTWChoosePicture;
+			sourceTree = "<group>";
+		};
+		72E442611FF5F31B00823552 /* QTImagePick */ = {
+			isa = PBXGroup;
+			children = (
+				72E442661FF5F31B00823552 /* View */,
+				72E442621FF5F31B00823552 /* Controller */,
+			);
+			path = QTImagePick;
+			sourceTree = "<group>";
+		};
+		72E442621FF5F31B00823552 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				72E442631FF5F31B00823552 /* QTImagePickController.m */,
+				72E442641FF5F31B00823552 /* QTImagePickController.h */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		72E442661FF5F31B00823552 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				72E4426A1FF5F31B00823552 /* QTImagePickCell.h */,
+				72E442671FF5F31B00823552 /* QTImagePickCell.m */,
+				72E442681FF5F31B00823552 /* QTPickCameraCell.h */,
+				72E442691FF5F31B00823552 /* QTPickCameraCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		72E4426E1FF5F32100823552 /* QTImageDisplay */ = {
+			isa = PBXGroup;
+			children = (
+				72E442751FF5F32100823552 /* View */,
+				72E4426F1FF5F32100823552 /* Controller */,
+			);
+			path = QTImageDisplay;
+			sourceTree = "<group>";
+		};
+		72E4426F1FF5F32100823552 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				72E442701FF5F32100823552 /* QTClipImageContainerController */,
+				72E442731FF5F32100823552 /* QTImageDisplayController.h */,
+				72E442741FF5F32100823552 /* QTImageDisplayController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		72E442701FF5F32100823552 /* QTClipImageContainerController */ = {
+			isa = PBXGroup;
+			children = (
+				72E442711FF5F32100823552 /* QTClipImageContainerController.h */,
+				72E442721FF5F32100823552 /* QTClipImageContainerController.m */,
+			);
+			path = QTClipImageContainerController;
+			sourceTree = "<group>";
+		};
+		72E442751FF5F32100823552 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				72E442761FF5F32100823552 /* ScrollContainerView */,
+				72E442791FF5F32100823552 /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		72E442761FF5F32100823552 /* ScrollContainerView */ = {
+			isa = PBXGroup;
+			children = (
+				72E442771FF5F32100823552 /* QTClipImageContainerView.m */,
+				72E442781FF5F32100823552 /* QTClipImageContainerView.h */,
+			);
+			path = ScrollContainerView;
+			sourceTree = "<group>";
+		};
+		72E442791FF5F32100823552 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				72E4427A1FF5F32100823552 /* QTThumbnailCell.h */,
+				72E4427B1FF5F32100823552 /* QTThumbnailCell.m */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,8 +270,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72E4426D1FF5F31B00823552 /* QTPickCameraCell.m in Sources */,
+				72E4427D1FF5F32100823552 /* QTImageDisplayController.m in Sources */,
+				72E442601FF5F31500823552 /* ChoosePictureViewController.m in Sources */,
 				729A1C311F29E457007B22E7 /* AppDelegate.m in Sources */,
+				72E4425F1FF5F31500823552 /* QTChoosePictureCollectionViewCell.m in Sources */,
+				72E4427F1FF5F32100823552 /* QTThumbnailCell.m in Sources */,
+				72E4427C1FF5F32100823552 /* QTClipImageContainerController.m in Sources */,
+				72E4426B1FF5F31B00823552 /* QTImagePickController.m in Sources */,
+				72E4427E1FF5F32100823552 /* QTClipImageContainerView.m in Sources */,
 				729A1C2E1F29E457007B22E7 /* main.m in Sources */,
+				72E4426C1FF5F31B00823552 /* QTImagePickCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
