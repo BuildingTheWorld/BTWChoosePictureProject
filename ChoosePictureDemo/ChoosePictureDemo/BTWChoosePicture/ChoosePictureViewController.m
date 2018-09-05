@@ -17,7 +17,9 @@
 //#import "QTNavigationController.h"
 
 @interface ChoosePictureViewController () <UICollectionViewDataSource, UICollectionViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate>
-
+{
+    id _pickImageNotificationObserver;
+}
 @property (nonatomic, strong) UICollectionView *CPCollectionView;
 @property (nonatomic, strong) UICollectionViewFlowLayout *CPFlowLayout;
 @property (nonatomic, strong) NSMutableArray *modelArray;
@@ -102,7 +104,7 @@
 {
     __weak typeof(self) weakSelf = self;
     
-    [[NSNotificationCenter defaultCenter] addObserverForName:kNotificationNamePickImage object:nil queue:nil usingBlock:^(NSNotification * _Nonnull note) {
+    _pickImageNotificationObserver [[NSNotificationCenter defaultCenter] addObserverForName:kNotificationNamePickImage object:nil queue:nil usingBlock:^(NSNotification * _Nonnull note) {
         
         NSArray *tempArray = note.userInfo[kNotificationInfoKeyPickImage];
         
@@ -118,7 +120,8 @@
 
 - (void)removeNotificationObserver
 {
-    [[NSNotificationCenter defaultCenter] removeObserver:self name:kNotificationNamePickImage object:nil];
+//    [[NSNotificationCenter defaultCenter] removeObserver:self name:kNotificationNamePickImage object:nil];
+    [[NSNotificationCenter defaultCenter] removeObserver:_pickImageNotificationObserver];
 }
 
 #pragma mark - collection data source
